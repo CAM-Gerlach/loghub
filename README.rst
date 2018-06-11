@@ -1,41 +1,62 @@
 loghub
 ======
 
-Project details
----------------
-|license| |pypi version| |gitter| |backers| |sponsors|
 
-Build status
-------------
-|travis status| |appveyor status| |circleci status| |coverage| |scrutinizer|
+|license| |pypi version| |conda version| |conda downloads| |backers| |gitter| |br|
+|pypi status| |travis status| |appveyor status| |circleci status| |coverage| |scrutinizer|
+
+.. |br| raw:: html
+
+   <br>
 
 .. |travis status| image:: https://travis-ci.org/spyder-ide/loghub.svg?branch=master
    :target: https://travis-ci.org/spyder-ide/loghub
    :alt: Travis-CI build status
+
 .. |appveyor status| image:: https://ci.appveyor.com/api/projects/status/vlvwisroqjaf6jvl?svg=true
    :target: https://ci.appveyor.com/project/spyder-ide/loghub
    :alt: Appveyor build status
+
 .. |circleci status| image:: https://circleci.com/gh/spyder-ide/loghub/tree/master.svg?style=shield
    :target: https://circleci.com/gh/spyder-ide/loghub/tree/master
    :alt: Circle-CI build status
+
 .. |scrutinizer| image:: https://scrutinizer-ci.com/g/spyder-ide/loghub/badges/quality-score.png?b=master
    :target: https://scrutinizer-ci.com/g/spyder-ide/loghub/?branch=master
    :alt: Scrutinizer Code Quality
+
 .. |license| image:: https://img.shields.io/pypi/l/loghub.svg
    :target: LICENSE.txt
-   :alt: License
+   :alt: License (MIT)
+
+.. |pypi status| image:: https://img.shields.io/pypi/status/loghub.svg
+   :target: https://github.com/spyder-ide/loghub
+   :alt: PyPI development status
+
 .. |pypi version| image:: https://img.shields.io/pypi/v/loghub.svg
-   :target: https://pypi.python.org/pypi/loghub/
+   :target: https://pypi.org/project/loghub/
    :alt: Latest PyPI version
+
+.. |conda version| image:: https://img.shields.io/conda/vn/conda-forge/loghub.svg
+   :target: https://anaconda.org/conda-forge/loghub
+   :alt: Latest Conda-Forge version
+
+.. |conda downloads| image:: https://img.shields.io/conda/d/conda-forge/loghub.svg
+   :target: https://anaconda.org/conda-forge/loghub
+   :alt: Conda-Forge download count
+
 .. |gitter| image:: https://badges.gitter.im/spyder-ide/public.svg
    :target: https://gitter.im/spyder-ide/public
    :alt: Join the chat at https://gitter.im/spyder-ide/public
+
 .. |coverage| image:: https://coveralls.io/repos/github/spyder-ide/loghub/badge.svg
    :target: https://coveralls.io/github/spyder-ide/loghub?branch=master
    :alt: Code Coverage
+
 .. |backers| image:: https://opencollective.com/spyder/backers/badge.svg?color=blue
    :target: #backers
    :alt: OpenCollective Backers
+
 .. |sponsors| image:: https://opencollective.com/spyder/sponsors/badge.svg?color=blue
    :target: #sponsors
    :alt: OpenCollective Sponsors
@@ -155,7 +176,7 @@ Or generate a Github access token and use that instead, for example:
 Because of the Github API rate limitations it is advised to always use authentication
 by either access token or user and password.
 
-    
+
 Advanced Usage
 --------------
 
@@ -164,7 +185,7 @@ Filter PR base branch
 
 Pull requests to display can be filtered depending on the branch they were
 merge against (base branch):
-              
+
 .. code-block:: text
 
     loghub spyder-ide/spyder --branch 3.x
@@ -216,7 +237,7 @@ Custom templates
 ~~~~~~~~~~~~~~~~
 
 Loghub uses Jinja2 templates to format the output. If the current template
-does not your needs, you can copy the default `templates <https://github.com/spyder-ide/loghub/tree/master/loghub/templates>`_ 
+does not your needs, you can copy the default `templates <https://github.com/spyder-ide/loghub/tree/master/loghub/templates>`_
 and create a new one and provide the path to it as:
 
 .. code-block:: text
@@ -291,7 +312,7 @@ Detailed CLI arguments
 
       --batch {milestones,tags}
                             Run loghub for all milestones or all tags
- 
+
       --no-prs              Run loghub without any pull requests output
 
 Label utility CLI arguments
@@ -303,13 +324,13 @@ loghub includes an additional utility to get or update labels.
     usage: loghub-labels [-h] [-u USERNAME] [-p PASSWORD] [-t TOKEN]
                          [-a [{get,update}]] [-f FILENAME]
                          repository
-    
+
     positional arguments:
       repository            Repository name to generate the Changelog for, in the
                             form user/repo or org/repo (e.g. spyder-ide/spyder)
-    
+
     optional arguments:
-      -h, --help            
+      -h, --help
                             show this help message and exit
 
       -u USERNAME, --username USERNAME
