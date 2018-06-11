@@ -1,6 +1,5 @@
-loghub
+Loghub
 ======
-
 
 |license| |pypi version| |conda version| |conda downloads| |backers| |gitter| |br|
 |pypi status| |travis status| |appveyor status| |circleci status| |coverage| |scrutinizer|
@@ -60,6 +59,8 @@ loghub
 .. |sponsors| image:: https://opencollective.com/spyder/sponsors/badge.svg?color=blue
    :target: #sponsors
    :alt: OpenCollective Sponsors
+
+*Copyright © 2016–2018 Spyder Project Contributors*
 
 
 Description
@@ -244,6 +245,7 @@ and create a new one and provide the path to it as:
 
     loghub spyder-ide/spyder --milestone v3.1 --template <PATH_TO_TEMPLATE>
 
+
 Detailed CLI arguments
 ----------------------
 
@@ -315,6 +317,7 @@ Detailed CLI arguments
 
       --no-prs              Run loghub without any pull requests output
 
+
 Label utility CLI arguments
 ---------------------------
 loghub includes an additional utility to get or update labels.
@@ -348,6 +351,7 @@ loghub includes an additional utility to get or update labels.
       -f FILENAME, --filename FILENAME
                             File for storing labels
 
+
 Contributing
 ------------
 
@@ -370,4 +374,3 @@ Become a sponsor to get your logo on our README on Github.
 .. image:: https://opencollective.com/spyder/sponsors.svg
    :target: https://opencollective.com/spyder#support
    :alt: Sponsors
-
